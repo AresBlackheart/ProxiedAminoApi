@@ -36,6 +36,4 @@ if __name__ == '__main__':
         for line in file:
             proxyList.append({"https": line.strip()})
     print(f" * Loaded {len(proxyList)} proxies!")
-    print(proxyList[0])
-    
     app.run(host='0.0.0.0', port=55535, debug=True)
